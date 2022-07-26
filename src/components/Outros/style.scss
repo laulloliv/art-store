@@ -1,0 +1,142 @@
+// -------- HEADER ----------
+
+#header{
+  background-color: #000000;
+  height: 5em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  p{
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 1.8em;
+    text-align: center;
+    width: 93%;
+    margin-right: -1em;
+
+    img{
+      height: 0.8em;
+    }
+  }
+
+  img{
+    height: 1.5em;
+    width: auto;
+  }
+}
+
+// ----------- PRODUTO -----------
+.produto{
+  margin: 2em;
+  display: block;
+  cursor: pointer;
+
+  .imgs, .icons{
+    display: flex;
+  }
+
+  .icons{
+   flex-direction: column;
+  }
+
+  #iProduto{
+    height: 14em;
+    width: 12em;
+    object-fit: cover;
+    margin-bottom: -1em;
+  }
+
+  #iEdita, #iDeleta{
+    height: 1.5em;
+  }
+
+  #titulo, #valor{
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: -1em;
+    margin-top: 2em;
+  }
+}
+
+// -------- DETALHES
+
+
+.detalhes{
+  width: 100%;
+  height: 20em;
+  margin-top: 2em;
+  margin-bottom: 4em;
+  background-color: #FFFFFF;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+
+  #iDetalhes{
+    height: 16em;
+    width: 13em;
+    object-fit: cover;
+  }
+
+  .descricao{
+    width: 60%;
+
+    .cTitulo, .cDescricao{
+      margin-bottom: 1em;
+    }
+
+    .cTitulo{
+      font-size: 1.9em;
+    }
+    .cDescricao{
+      font-size: 1.2em;
+    }
+  }
+
+  #dComprar{
+    display: flex;
+    justify-content: space-between;
+    width: 94%;
+
+    #dValor{
+      font-size: 1.3em;
+      font-weight: 500;
+    }
+
+  }
+
+  .closeDiv{
+    align-self: flex-start;
+    margin-top: 2em;
+    margin-right: -1.5em;
+    cursor: pointer;
+  }
+
+}
+
+#bAddCarrinho{
+  background-color: #BF5000;
+  border: none;
+  color: #FFFFFF;
+  padding: 0.5em 1em 0.5em 1em;
+  margin-right: -3.5em;
+  cursor: pointer;
+
+  &:hover{
+    background-color: #aa4701;
+  }
+}
+
+// ------------- Edita
+
+input{
+  border: 1px solid #000000;
+  border-radius: 0.2em;
+  height: 2em;
+  width: 90%;
+  padding-left: 0.5em;
+}
