@@ -34,8 +34,8 @@ export default function Home() {
     element.scrollLeft -= 250
   }
 
-  function view(modal) {
-    var modal = document.getElementById(modal)
+  function view(mod) {
+    var modal = document.getElementById(mod)
     modal.style.display = 'block'
   }
 

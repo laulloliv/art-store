@@ -11,8 +11,8 @@ export const ModalUpd = props => {
 
   var mod = ''
 
-  function closeModal(modal) {
-    var modal = document.getElementById(modal)
+  function closeModal(mod) {
+    var modal = document.getElementById(mod)
     mod = modal
     modal.style.display = 'none'
   }
